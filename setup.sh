@@ -1,6 +1,7 @@
 #!/bin/bash
 # homelab-cis-angelo - Auto CIS Level 1 harden - Angelo - Oct 2026
 set -e
+
 echo "[CIS 1.1.1] Disabling filesystems..."
 sudo tee /etc/modprobe.d/cis.conf > /dev/null <<CONF
 install cramfs /bin/false
